@@ -20,8 +20,13 @@ public class Rhombus : Square
 
     // properties
 
-    public double D1 { get => _d1; set => _d1 = value; }
-    public double D2 { get => _d2; set => _d2 = value; }
+    public double D1 
+    { get => _d1; 
+        set => _d1 = ValidateD1(value); 
+    }
+    public double D2 
+    { get => _d2; 
+        set => _d2 = ValidateD2(value); }
 
     //public methods
 

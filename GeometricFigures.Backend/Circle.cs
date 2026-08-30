@@ -14,6 +14,7 @@ namespace GeometricFigures.Backend;
     public Circle(string name, double r) 
     {
         R = r;
+        this.name = name;
     }
 
     //properties
