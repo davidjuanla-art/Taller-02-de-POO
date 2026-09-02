@@ -2,6 +2,7 @@
 
 public class Kite : Rhombus
 {
+    // fields
     private double _b;
 
     public Kite(string name, double a, double b, double d1, double d2) : base(name, a, d1, d2)
@@ -9,16 +10,22 @@ public class Kite : Rhombus
         B = b;
     }
 
+    // properties
+
     public double B
     {
         get => _b;
         set => _b = ValidateB(value);
     }
 
+    //public methods
+
     public override double GetPerimeter()
     {
         return 2 * (A + B);
     }
+
+    //private methods
 
     private double ValidateB(double B)
     {
