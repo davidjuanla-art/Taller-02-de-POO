@@ -20,6 +20,11 @@ public class Kite : Rhombus
 
     //public methods
 
+    public override double GetArea()
+    {
+        return  (D1 *D2) / 2;
+    }
+
     public override double GetPerimeter()
     {
         return 2 * (A + B);

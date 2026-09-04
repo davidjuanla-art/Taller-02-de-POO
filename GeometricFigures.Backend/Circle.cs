@@ -11,10 +11,10 @@ namespace GeometricFigures.Backend;
 
     //constructor
 
-    public Circle(string name, double r) 
+    public Circle(string name, double r) : base(name)
     {
         R = r;
-        this.name = name;
+       
     }
 
     //properties

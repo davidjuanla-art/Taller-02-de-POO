@@ -3,11 +3,19 @@
 
 public abstract class GeometricFigure
 {
-  
+    protected GeometricFigure(string name)
+    {
+        this.name = name;
+    }
+
 
 
     //properties
     public String name { get; set; } = null!;
+
+    //constructor
+
+
 
 
 
@@ -19,7 +27,7 @@ public abstract class GeometricFigure
 
     public override string ToString()
     {
-        return $"{name,-15} => Área: {GetArea(),12:n5}   Perímetro: {GetPerimeter(),12:n5}";
+        return $"{name,-15} => Área.....: {GetArea(),12:n5}      Perímetro: {GetPerimeter(),12:n5}";
     }
 
 

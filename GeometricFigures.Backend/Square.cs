@@ -9,10 +9,10 @@ public class Square : GeometricFigure
 
     //constructors
 
-    public Square(string name, double a) 
+    public Square(string name, double a) : base(name)
     {
         A = a;
-        this.name = name;
+        
     }
 
     //properties
